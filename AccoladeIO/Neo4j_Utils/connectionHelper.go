@@ -10,8 +10,7 @@ import (
 	"log"
 )
 
-//Connect () creates a connection to a Neo4j database passing in
-//three params (UserName, Password, RestAPI URL)
+//Connect () creates a connection to a Neo4j database
 func Connect(conn string) *neoism.Database {
 	db, err := neoism.Connect(conn)
 	if err != nil {

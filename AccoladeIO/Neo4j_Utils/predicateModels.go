@@ -9,7 +9,7 @@ import (
 	"github.com/jmcvetta/neoism"
 )
 
-//strict "Marriage" relation model
+//strict "Married" relation model
 func Married(db *neoism.Database, subject *neoism.Node, object *neoism.Node, date string) {
 	p := "married to"
 	subject.Relate(p, object.Id(), neoism.Props{"Date": date})
