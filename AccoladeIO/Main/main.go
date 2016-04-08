@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com/ob27/PropertyGraph/PropertyGraph/Neo4j_Utils"
+	"github.com/ob27/AccoladeIO/AccoladeIO/Neo4j_Utils"
 )
 
 //we would pass in a stream of spouses and their wedding date
@@ -20,8 +20,8 @@ func main() {
 	AccoladeC := Neo4j_Utils.CreateAccolade(db, "Record Holder")
 	AccoladeD := Neo4j_Utils.CreateAccolade(db, "Loyal Patron")
 
-	EmailA := Neo4j_Utils.EmailAddress(db, "bob@hotmail.com")
-	EmailB := Neo4j_Utils.EmailAddress(db, "bob.smith@gmail.com")
+	EmailA := Neo4j_Utils.CreateEmailAddress(db, "bob@hotmail.com")
+	EmailB := Neo4j_Utils.CreateEmailAddress(db, "bob.smith@gmail.com")
 
 	Neo4j_Utils.Issued(db, EntityA, AccoladeA, "07/04/2016")
 	Neo4j_Utils.Received(db, AccoladeA, EmailA, "07/04/2016")
