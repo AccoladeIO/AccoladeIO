@@ -1,7 +1,5 @@
 # Neo4jPT
 
-Welcome to the AccoladeIO wiki!
-
 # Getting Going
 **Requirements:**
 * Go install the latest version for [Golang](https://golang.org/)
